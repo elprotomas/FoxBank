@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_left_to_right">
+
+    <TextView
+        android:id="@+id/anio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Año"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etAnioVencimiento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreUsuario"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/numeroTarjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Número de Tarjeta"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etNumeroTarjeta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMesVencimiento"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Día"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etDiaVencimiento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreUsuario"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/contrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Contraseña"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etContrasenaUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.224"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTipoTarjeta"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tipoTarjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Tipo de Tarjeta"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etTipoTarjeta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.239"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNumeroTarjeta"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/CVV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="CVV"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etCVV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etContrasenaUsuario"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/mes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Mes"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etMesVencimiento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreUsuario"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/miColorSquare"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:background="@color/mi_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/etNombreUsuario"
+        android:layout_width="296dp"
+        android:layout_height="45dp"
+        android:textColor="@color/black"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/mes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+
+    <TextView
+        android:id="@+id/etDiaVencimiento"
+        android:layout_width="79dp"
+        android:layout_height="53dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="80dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="date"
+        app:layout_constraintEnd_toStartOf="@+id/etMesVencimiento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dia"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/etMesVencimiento"
+        android:layout_width="79dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="date"
+        app:layout_constraintEnd_toStartOf="@+id/etAnioVencimiento"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toEndOf="@+id/etDiaVencimiento"
+        app:layout_constraintTop_toBottomOf="@+id/mes"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/etAnioVencimiento"
+        android:layout_width="79dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:textColor="@color/black"
+
+        android:gravity="center"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etMesVencimiento"
+        app:layout_constraintTop_toBottomOf="@+id/anio"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/etContrasenaUsuario"
+        android:layout_width="296dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contrasena"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/etTipoTarjeta"
+        android:layout_width="296dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipoTarjeta"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/etCVV"
+        android:layout_width="296dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/CVV"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/etNumeroTarjeta"
+        android:layout_width="296dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numeroTarjeta"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="233dp"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.145"
+        app:srcCompat="@drawable/infotarjeta"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Tu Nombre"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etNombreUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Información de Tarjeta"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/miColorSquare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/miColorSquare" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="27dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:onClick="onPasswordVisibilityClick"
+        app:layout_constraintBottom_toBottomOf="@+id/etContrasenaUsuario"
+        app:layout_constraintEnd_toEndOf="@+id/etContrasenaUsuario"
+        app:layout_constraintTop_toTopOf="@+id/etContrasenaUsuario"
+        app:srcCompat="@drawable/eye_closed" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="27dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:onClick="onPasswordVisibilityClick"
+        app:layout_constraintBottom_toBottomOf="@+id/etCVV"
+        app:layout_constraintEnd_toEndOf="@+id/etCVV"
+        app:layout_constraintTop_toTopOf="@+id/etCVV"
+        app:srcCompat="@drawable/eye_closed" />
+
+    <ImageButton
+        android:id="@+id/ibtnDevolver"
+        android:layout_width="43dp"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toBottomOf="@+id/miColorSquare"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/miColorSquare"
+        app:layout_constraintTop_toTopOf="@+id/miColorSquare"
+        app:srcCompat="@drawable/devolver" />
+</androidx.constraintlayout.widget.ConstraintLayout>

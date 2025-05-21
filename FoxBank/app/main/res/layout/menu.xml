@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_left_to_right">
+
+    <View
+        android:id="@+id/miColorSquare"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:background="@color/mi_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnInfoUser"
+        android:layout_width="322dp"
+        android:layout_height="92dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="41dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInicio">
+
+        <LinearLayout
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/infoUser"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/infouserlogo" />
+
+            <TextView
+                android:id="@+id/infoUser1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:text="Información de Usuario"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnInfoTarjeta"
+        android:layout_width="322dp"
+        android:layout_height="92dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="41dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInfoUser">
+
+        <LinearLayout
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+            <ImageView
+                android:id="@+id/infoTrajeta"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/infotarjetalogo" />
+
+            <TextView
+                android:id="@+id/infoTarjeta1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:text="Información de Tarjeta"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnTransferencias"
+        android:layout_width="322dp"
+        android:layout_height="92dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="41dp"
+
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="41dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInfoTarjeta">
+
+        <LinearLayout
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/transferencias"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/transferenciaslogo" />
+
+            <TextView
+                android:id="@+id/transferencias1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:text="Transferencias"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnSalir"
+        android:layout_width="322dp"
+        android:layout_height="92dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="41dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTransferencias">
+
+        <LinearLayout
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/salir"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/cerrarlogo" />
+
+            <TextView
+                android:id="@+id/txtSalir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:text="Cerrar Sesión"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnInicio"
+        android:layout_width="322dp"
+        android:layout_height="92dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="41dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/miColorSquare">
+
+        <LinearLayout
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/mini1"
+                android:layout_width="32dp"
+                android:layout_height="70dp"
+                android:src="@drawable/iniciologo" />
+
+            <TextView
+                android:id="@+id/mini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="  Inicio"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menú"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/miColorSquare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/miColorSquare" />
+
+    <ImageButton
+        android:id="@+id/ibtnDevolver"
+        android:layout_width="43dp"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toBottomOf="@+id/miColorSquare"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/miColorSquare"
+        app:layout_constraintTop_toTopOf="@+id/miColorSquare"
+        app:srcCompat="@drawable/devolver"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
